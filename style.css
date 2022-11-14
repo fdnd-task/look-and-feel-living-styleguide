@@ -7,42 +7,147 @@
   --zand: #C9B5B2;
   --grijs: #444444;
   --licht-grijs: #DDDDDD;
+  --border: 2px solid var(--grijs);
 }
 
 @font-face {
-  font-family: 'Fira sans';
+  font-family: 'Fira Sans Regular';
   src:
-        url('fonts/FiraSans-Regular.ttf') format('ttf');
+    url('./fonts/FiraSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Fira Sans Medium';
+  src:
+    url('./fonts/FiraSans-Medium.ttf');
+}
+
+.typografie-styleguide {
+  background-color: #25AE93;
+  border: var(--border);
+  padding: 10px;
+  max-width: 70rem;
+  margin: auto;
+}
+
+.sg-heading {
+  border: var(--border);
+  padding: 10px;
+  max-height: 8rem;
+  min-height: 8rem;
+  display: flex;
+}
+
+.voorbeeld-box-links {
+  border: var(--border);
+  min-width: 34rem;
+}
+
+.voorbeeld-box-rechts {
+  border: var(--border);
+  min-width: 34rem;
+}
+
+.heading-kopje {
+  border: var(--border);
+}
+
+.heading-informatie {
+  border: var(--border);
+  display: flex;
+}
+
+p .heading-kopje-text {
+  margin: auto;
+}
+
+.font-family-informatie {
+  border: var(--border);
+  min-width: 9rem;
+  min-height: 4.5rem;
+  margin: auto;
+}
+
+.font-size-informatie {
+  border: var(--border);
+  min-width: 9rem;
+  min-height: 4.5rem;
+  margin: auto;
+}
+
+.line-height-informatie {
+  border: var(--border);
+  min-width: 9rem;
+  min-height: 4.5rem;
+  margin: auto;
 }
 
 h1 {
   font-size: 36px;
+  font-family: 'Fira Sans Medium';
+  font-weight: inherit;
+  letter-spacing: -0.02em;
+  margin: auto;
+  padding: 10px;
 }
 
 h2 {
   font-size: 32px;
+  font-family: 'Fira Sans Medium';
+  font-weight: inherit;
+  letter-spacing: -0.02em;
+  margin: auto;
+  padding: 10px;
 }
 
 h3 {
   font-size: 24px;
+  font-family: 'Fira Sans Medium';
+  font-weight: inherit;
+  letter-spacing: -0.02em;
+  margin: auto;
+  padding: 10px;
 }
 
 h4 {
   font-size: 20px;
+  font-family: 'Fira Sans Medium';
+  font-weight: inherit;
+  letter-spacing: -0.02em;
+  margin: auto;
+  padding: 10px;
 }
 
 h5 {
   font-size: 18px;
+  font-family: 'Fira Sans Medium';
+  font-weight: inherit;
+  letter-spacing: -0.02em;
+  margin: auto;
+  padding: 10px;
 }
 
 h6 {
   font-size: 16px;
+  font-family: 'Fira Sans Medium';
+  font-weight: inherit;
+  letter-spacing: -0.02em;
+  margin: auto;
+  padding: 10px;
 }
 
 p {
   font-size: 16px;
+  font-family: 'Fira Sans Regular';
+  margin: auto;
+  padding: 10px;
 }
 
 p.linkjes {
   font-size: 16px;
+  font-family: 'Fira Sans Medium';
+  font-weight: inherit;
+  letter-spacing: -0.02em;
+  margin: auto;
+  padding: 10px;
 }
