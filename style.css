@@ -1,69 +1,48 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
-  font-size: min(calc(1em + 1vw), 4em);
+  --geel: #FFD05F;
+  --cyaan: #46BECD;
+  --turkoois: #25AE93;
+  --blauw: #606EB3;
+  --bruin: #6A4955;
+  --zand: #C9B5B2;
+  --grijs: #444444;
+  --licht-grijs: #DDDDDD;
 }
 
-body {
-  min-height: 100vh;
-
-  font-family: sans-serif;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: 'kern' 1, 'liga' on, 'dlig' on;
-  line-height: 1.5;
-
-  color: DarkSlateGray;
-  background-color: silver;
+@font-face {
+  font-family: 'Fira sans';
+  src:
+        url('fonts/FiraSans-Regular.ttf') format('ttf');
 }
 
-body > * {
-  padding: 0.2rem;
+h1 {
+  font-size: 36px;
 }
 
-header {
-  background-color: white;
-  margin-bottom: 1rem;
-  color: silver;
-}
-
-header > h1 {
-  font-size: 1rem;
-  text-align: right;
-}
-
-nav li {
-  display: inline;
-}
-
-nav li a {
-  text-decoration: none;
-}
-
-nav a.active {
-  font-weight: bold;
-}
-
-section {
-  width: min(100%, 38rem);
-  background: white;
-  border-radius: 0.2rem;
-  padding: 0.2rem;
-}
-section + section {
-  margin-top: 1rem;
+h2 {
+  font-size: 32px;
 }
 
 h3 {
-  border-bottom: DarkSlateGray 1px solid;
-  margin-bottom: 1rem;
+  font-size: 24px;
 }
 
-pre {
-  padding-left: 0.2rem;
-  background: DarkSlateGray;
-  color: white;
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+p.linkjes {
+  font-size: 16px;
 }
