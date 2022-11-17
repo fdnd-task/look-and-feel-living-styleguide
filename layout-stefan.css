@@ -358,6 +358,8 @@ article i {
     color: var(--c-white);
     padding: 0.8em;
     display: block;
+    width: auto;
+    overflow-x: scroll;
 }
 
 .css {
@@ -365,7 +367,8 @@ article i {
     color: var(--c-white);
     border-radius: 0.8em;
     padding: 2em;
-    width: fit-content;
+    width: auto;
+    overflow-x: scroll;
 }
 
 .index {
@@ -750,7 +753,8 @@ article .guidelines {
     color: var(--c-white);
     border-radius: 0.8em;
     padding: 2em;
-    width: fit-content;
+    width: auto;
+    overflow-x: scroll;
 }
 
 .hide {
@@ -839,7 +843,8 @@ article .guidelines {
         color: var(--c-white);
         border-radius: 0.8em;
         padding: 2em;
-        width: fit-content;
+        width: auto;
+        overflow-x: scroll;
     }
 
     #desktop {
@@ -1057,7 +1062,8 @@ article .guidelines {
         color: var(--c-white);
         border-radius: 0.8em;
         padding: 2em;
-        width: fit-content;
+        width: auto;
+        overflow-x: scroll;
     }
 
     footer {
@@ -1318,7 +1324,8 @@ article .guidelines {
         color: var(--c-white);
         border-radius: 0.8em;
         padding: 2em;
-        width: fit-content;
+        width: auto;
+        overflow-x: scroll;
     }
 
     #desktop {
@@ -1554,6 +1561,8 @@ article .guidelines {
         padding: 0.8em;
         border-radius: 0.8em;
         display: block;
+        width: auto;
+        overflow-x: scroll;
     }
 
     .css {
@@ -1561,7 +1570,8 @@ article .guidelines {
         color: var(--c-white);
         border-radius: 0.8em;
         padding: 2em;
-        width: fit-content;
+        width: auto;
+        overflow-x: scroll;
     }
 
     footer {
