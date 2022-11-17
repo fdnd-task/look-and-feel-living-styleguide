@@ -4,66 +4,254 @@
   padding: 0;
 }
 
-:root {
-  font-size: min(calc(1em + 1vw), 4em);
+html {
+  /* padding-top toegevoegd door de fixed header (het valt er anders achter) */
+  scroll-padding-top: 13vh;
+  scroll-behavior: smooth;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-
   font-family: sans-serif;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: 'kern' 1, 'liga' on, 'dlig' on;
   line-height: 1.5;
-
-  color: DarkSlateGray;
-  background-color: silver;
-}
-
-body > * {
-  padding: 0.2rem;
+  color: black;
 }
 
 header {
-  background-color: white;
-  margin-bottom: 1rem;
-  color: silver;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: #333467;
+  width: 20%;
+  height: 100%;
+  border-right: #F26F21 solid 5px;
+  padding-top: 50px;
+  color: white;
 }
 
-header > h1 {
-  font-size: 1rem;
-  text-align: right;
+.logoEnTekst {
+  padding-bottom: 30px;
+  line-height: 1.15;
+  margin-left: -25px;
+}
+
+.logoEnTekst>p {
+  opacity: 0.5;
+}
+
+.logoTemplate {
+  width: 130px;
+  /* width: 1.125rem clamp(1rem, calc(120 / 1440 * 100vw), 1rem); */
 }
 
 nav li {
-  display: inline;
+  list-style-type: none;
+  padding-top: 1vh;
 }
 
 nav li a {
+  font-size: 1rem;
   text-decoration: none;
+  color: #ffffff;
+  font-weight: light;
+  align-self: flex-start;
+  display: block;
+  padding: 10px 60px 10px 10px;
 }
 
-nav a.active {
-  font-weight: bold;
+.active {
+  color: white;
+  background-color: #9191ae;
+  border-radius: 5px;
+}
+
+main {
+  margin-left: 25vw;
+  margin-right: 8vw;
+  margin-bottom: 3vh;
 }
 
 section {
-  width: min(100%, 38rem);
-  background: white;
-  border-radius: 0.2rem;
-  padding: 0.2rem;
-}
-section + section {
-  margin-top: 1rem;
+  margin: 100px;
+  color: #727272;
+  background: #ffffff;
+  padding-bottom: 100px;
+  border-bottom: #dfdfdf solid 3px;
 }
 
-h3 {
-  border-bottom: DarkSlateGray 1px solid;
+section>h2 {
+  color: #333467;
+  font-size: 30px;
+}
+
+h2 {
+  border-bottom: #ffffff 2px solid;
+  margin-bottom: 1rem;
+}
+/* icons */
+.icons{
+  border-left: 7px solid #9191ae;
+  padding: 1em;
+}
+#simpelIcon{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1em;
+  grid-row:  225px 175px ;
+}
+.text-icons{
+  padding-bottom: 1em;
+}
+.item img{
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+  }
+.item img:hover{
+   box-shadow: #88a5bf7a 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+   padding: .5em;
+  }
+
+/* Forms */
+
+#formulieren h2 {
+  font-size: 40px;
+}
+
+#formulieren h3 {
+  font-size: 30px;
+}
+
+#formulieren h4 {
+  font-size: 20px;
+}
+
+/* FROM: Hier wordt de Tekst input weergegeven */
+
+.container-textInput,
+.container-textArea {
+  display: flex; 
+  flex-direction: row;
+  padding: 1rem 0;
+}
+
+.container-textInput ol,
+.container-textArea ol {
+  padding: 6rem 6rem;
+}
+
+.anatomie_img {
+  background-color: #D6D6E1;
+  width: 400px;
+  height: 300px;
+  padding: 1rem;
+  border-radius: 5px
+}
+
+/* FORM: Hier wordt het Gebruik van de forms weergegeven */
+
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 1rem;
+  gap: 2rem 0;
+  margin-bottom: 2rem;
+ 
+}
+
+.container-wrapper li  {
+  padding: 0 20px 0 10px
+}
+
+.img_wrapper  {
+  background-color: #D6D6E1;
+  width: 350px;
+  height: 300px;
+  padding: 1rem;
+  border-radius: 5px;
+  
+}
+
+.container-wrapper p {
+  max-width: 350px;
+}
+
+/* FORM: hier wordt displaying HTML & CSS weergegeven */
+.form-onvisible-html,
+.form-onvisible-css {
+  background-color: #D6D6E1;
+  width: 100%;
+  height: 32remx;
+  border-radius: 5px;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-pre {
-  padding-left: 0.2rem;
-  background: DarkSlateGray;
-  color: white;
+/* FORM: hier playing HTML & CSS weergegeven */
+.form-visible-code {
+  background-color: #D6D6E1;
+  width: 60%;
+  height: 32rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.form-visible-code input,
+ textarea {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid  #333467;
+  border-radius: 5px;
+  resize: none;
+  
+}
+
+input, label, textarea {
+  display:block;
+}
+
+ textarea:focus {
+  border: 2px solid  #333467;
+ }
+
+.form-visible-code input:focus {
+    border: 3px solid  #333467;
+  }
+
+ .form-button {
+    background-color: #333467;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    border-radius: 5px;;
+    cursor: pointer;
+    justify-content: center;
+  }
+
+  #form-box {
+    text-align: center;
+  }
+
+/* KLEUR */
+
+.section-color > img:last-child{
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 830px) {
+  header {
+    display: none;
+  }
+
+  main {
+    margin: 20vh 2%;
+    margin-bottom: 3vh;
+  }
 }
