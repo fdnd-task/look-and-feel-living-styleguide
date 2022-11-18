@@ -1454,6 +1454,7 @@ span{
 
 .extra-tip{
   max-width: none;
+  display: inline;
 }
 
 .prefiew-input{
@@ -1492,7 +1493,7 @@ input[type=password] {
   margin-left: 1rem;
 }
 
-.display-code p, span{
+.display-code p{
   display: inline;
 }
 
