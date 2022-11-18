@@ -1,0 +1,56 @@
+    @font-face{
+        font-family:"Rigid Square W01 Thin";
+        src:url("Fonts/5536299/c44e5c58-3b08-40f3-9eb5-c65e374088d3.woff2") format("woff2"),url("Fonts/5536299/134c1936-04ea-459d-ab2a-cd65b5c59b19.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 Thin Italic";
+        src:url("Fonts/5536305/d4a2d97c-2706-449e-949f-b7da1ad85477.woff2") format("woff2"),url("Fonts/5536305/ecd0e675-465f-4f2e-99c1-dd01c2a2ab8a.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 ExtraLight It";
+        src:url("Fonts/5536311/2d063b34-6302-45f9-84c7-87d9c7920a32.woff2") format("woff2"),url("Fonts/5536311/3e087803-2205-4d37-8e1e-613752112f20.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 Light";
+        src:url("Fonts/5536317/534a8e76-bae2-49a7-8617-7d0f5a39ab93.woff2") format("woff2"),url("Fonts/5536317/af8cc0df-f203-48c3-b2ad-9347ab6865ed.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 Light Italic";
+        src:url("Fonts/5536323/14236573-9e77-4bac-8e5e-eaa8b34de4fb.woff2") format("woff2"),url("Fonts/5536323/d45e7d44-a0e7-4cd8-b087-c96264d1c5d2.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 Italic";
+        src:url("Fonts/5536329/7dbeed5a-3309-4e62-bed1-28b83d20f6e7.woff2") format("woff2"),url("Fonts/5536329/7f32bf4a-8c72-4d74-8e82-b29d6d327697.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 Bold Italic";
+        src:url("Fonts/5536335/48fb6f48-62c0-4e84-b1ae-6d7dbad751d5.woff2") format("woff2"),url("Fonts/5536335/727ce964-651a-4050-b963-efda14741808.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 ExtraBold It";
+        src:url("Fonts/5536341/18d6a749-2041-4f01-bc1d-d799e59f942a.woff2") format("woff2"),url("Fonts/5536341/28c1d346-8c42-4524-b25f-bb0de914f3e8.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 ExtraBold";
+        src:url("Fonts/5536786/656c3b40-718e-4035-ad7a-bf0868c04b2b.woff2") format("woff2"),url("Fonts/5536786/c7770a91-8f9c-4dd9-b1ce-8a0a0ea8d7f1.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 Bold";
+        src:url("Fonts/5536792/6a40077f-3e96-4a9a-aaad-125df9f5d864.woff2") format("woff2"),url("Fonts/5536792/9259defe-8633-45f9-bd0d-d53eec9a3244.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 SemiBold It";
+        src:url("Fonts/5536798/527dbebb-ee71-492e-87d6-bebb10ed7dd9.woff2") format("woff2"),url("Fonts/5536798/e6e4ca9c-5f6b-440f-b9c5-442e4a38fca8.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 SemiBold";
+        src:url("Fonts/5536804/859c2a14-c73b-4c66-8ce9-dbc774a34f71.woff2") format("woff2"),url("Fonts/5536804/31d82c22-c9dc-46ff-bd89-bdc329c83b3d.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 Regular";
+        src:url("Fonts/5536810/f67308ec-9642-4d2d-aa50-227d5cdb0cb9.woff2") format("woff2"),url("Fonts/5536810/66e8127b-ccff-468e-b12e-78c635dd21ad.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Rigid Square W01 ExtraLight";
+        src:url("Fonts/5536816/54761916-ee67-4b50-8c05-ae9ddf290455.woff2") format("woff2"),url("Fonts/5536816/ff023ef7-3167-473c-96f0-423996355adf.woff") format("woff");
+    }
