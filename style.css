@@ -1,4 +1,5 @@
 :root {
+  --wit: #FFF;
   --geel: #FFD05F;
   --cyaan: #46BECD;
   --turkoois: #25AE93;
@@ -7,7 +8,9 @@
   --zand: #C9B5B2;
   --grijs: #444444;
   --licht-grijs: #DDDDDD;
+  --licht-zwart: #525151;
   --border: 2px solid var(--grijs);
+  --gradient-color-magenta: linear-gradient(332deg, #B9005F 0%, #E30059 100%);
 }
 
 @font-face {
@@ -22,61 +25,73 @@
     url('./fonts/FiraSans-Medium.ttf');
 }
 
+body {
+  background-color: var(--licht-grijs);
+}
+
+.container {
+  width: 66vw;
+}
+
 .typografie-styleguide {
-  background-color: #25AE93;
-  border: var(--border);
-  padding: 10px;
+  background-color: var(--wit);
+  border-radius: 0.4rem;
+  padding: 0.625rem;
   max-width: 70rem;
   margin: auto;
 }
 
 .sg-heading {
-  border: var(--border);
-  padding: 10px;
+  border-bottom: var(--border);
+  padding: 0.625rem; 
   max-height: 8rem;
   min-height: 8rem;
   display: flex;
+  justify-content: center;
 }
 
 .voorbeeld-box-links {
-  border: var(--border);
   min-width: 34rem;
 }
 
 .voorbeeld-box-rechts {
-  border: var(--border);
-  min-width: 34rem;
-}
-
-.heading-kopje {
-  border: var(--border);
+  max-width: 15em;
 }
 
 .heading-informatie {
-  border: var(--border);
   display: flex;
 }
 
-p .heading-kopje-text {
+.heading-kopje-text {
   margin: auto;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.tekst-kopje-informatie {
+  padding-left: 2px;
+  padding-top: 2px;
+  color: var(--licht-zwart);
+}
+
+.tekst-van-informatie {
+  padding-left: 2px;
+  padding-top: 0px;
 }
 
 .font-family-informatie {
-  border: var(--border);
   min-width: 9rem;
   min-height: 4.5rem;
   margin: auto;
 }
 
 .font-size-informatie {
-  border: var(--border);
   min-width: 9rem;
   min-height: 4.5rem;
   margin: auto;
 }
 
 .line-height-informatie {
-  border: var(--border);
   min-width: 9rem;
   min-height: 4.5rem;
   margin: auto;
@@ -88,7 +103,7 @@ h1 {
   font-weight: inherit;
   letter-spacing: -0.02em;
   margin: auto;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 h2 {
@@ -97,7 +112,7 @@ h2 {
   font-weight: inherit;
   letter-spacing: -0.02em;
   margin: auto;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 h3 {
@@ -106,7 +121,7 @@ h3 {
   font-weight: inherit;
   letter-spacing: -0.02em;
   margin: auto;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 h4 {
@@ -115,7 +130,7 @@ h4 {
   font-weight: inherit;
   letter-spacing: -0.02em;
   margin: auto;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 h5 {
@@ -124,7 +139,7 @@ h5 {
   font-weight: inherit;
   letter-spacing: -0.02em;
   margin: auto;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 h6 {
@@ -133,21 +148,21 @@ h6 {
   font-weight: inherit;
   letter-spacing: -0.02em;
   margin: auto;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 p {
   font-size: 16px;
   font-family: 'Fira Sans Regular';
   margin: auto;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
-p.linkjes {
+.linkjes {
   font-size: 16px;
   font-family: 'Fira Sans Medium';
   font-weight: inherit;
   letter-spacing: -0.02em;
   margin: auto;
-  padding: 10px;
+  padding: 0.625rem;
 }
