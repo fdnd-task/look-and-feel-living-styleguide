@@ -444,6 +444,12 @@ table {
 .section-color>img:last-child {
   padding-top: 50px;
 }
+
+.section-color > h3 {
+padding-top: 50px;
+
+}
+
 /* KLEUR END */
 
 /* RESPONSIVE */
