@@ -505,6 +505,21 @@ input, label, textarea {
         Het bevat een tekstlabel en er kan een ondersteunend pictogram worden weergegeven.
       </p>  
 
+      <table class="table1">
+        <tr>
+          <td class="td-button">
+            <img class="gebruik1" src="./assets/btn-gebruik.png" alt="Gebruik1">
+            <p> Gebruik een knop om acties mogelijk te maken die belangrijk zijn voor een gebruiker.</p>
+          </td>
+          <td class="td-button">
+            <img class="gebruik1" src="./assets/btn-gebruik2.png" alt="Gebruik2">
+            <p>
+              Wanneer twee knoppen nauw worden gebruikt, moeten knoppen worden benadrukt.
+            </p>
+          </td>
+        </tr>
+      </table>
+
       <h3>Anatomie</h3>
 
       <p>
@@ -521,22 +536,13 @@ input, label, textarea {
         </ul>
       </article>
 
-      <table class="table1">
-        <tr>
-          <td class="td-button">
-            <img class="gebruik1" src="./assets/btn-gebruik.png" alt="Gebruik1">
-            <p> Gebruik een knop om acties mogelijk te maken die belangrijk zijn voor een gebruiker.</p>
-          </td>
-          <td class="td-button">
-            <img class="gebruik1" src="./assets/btn-gebruik2.png" alt="Gebruik2">
-            <p>
-              Wanneer twee knoppen nauw worden gebruikt, moeten knoppen worden benadrukt.
-            </p>
-          </td>
-        </tr>
-      </table>
 
       <h3>Opties</h3>
+
+      <p>
+        Hier is te zien dat we de buttons onderscheiden doormiddel het achtergrond kleur 
+        op verschillende manieren te tonen, zo kunnen we de nadruk leggen welke echt van belang is en welke minder.
+      </p>
 
       <article class="btn-kader">
         <button class="btn1"> Primary button</button>
@@ -568,7 +574,45 @@ input, label, textarea {
         </tr>
       </table>
 
+      <h3> HTML-Voorbeeld</h3>
       
+      <div class="code-revieuw"> 
+        <pre>
+          <code>
+            &lt;article class="btn-kader"&gt;
+            &lt;button class="btn1"&gt; Primary button&lt;/button&gt;
+            &lt;button class="btn2"&gt; Secondary button&lt;/button&gt;
+            &lt;button class="btn3"&gt; Tertiary button&lt;/button&gt;
+            &lt;/article&gt;
+          </code>
+        </pre>
+      </div>
+
+      <h3> CSS-Voorbeeld</h3>
+      
+      <div class="code-revieuw"> 
+        <pre>
+          <code>
+            .btn1 {
+              background-color: #333467;
+              color: white;
+            } 
+            
+            .btn2 {
+              background-color: white;
+              border-style: solid #333467;
+              color: #333467;
+            }
+            
+            .btn3 {
+              background-color: #33346727;
+              border-style: solid #333467;
+              color: #333467;
+            }
+          </code>
+        </pre>
+      </div>
+
     </section>
 
     <section id="footer">
