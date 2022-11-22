@@ -12,8 +12,10 @@
 
 <body>
   <header>
-    <div class="logoEnTekst">
-      <img class="logoTemplate" src="assets/plantswap-logo-white.png" alt="logo">
+    <div class="logo-en-tekst">
+      <a href="#">
+        <img class="logo-template" src="assets/plantswap-logo-white.png" alt="logo">
+      </a>
       <p>Styleguide V1.0</p>
     </div>
     <nav>
@@ -125,7 +127,7 @@
         screen reader.</p>
     </section>
 
-    <section class=section-color id="kleur">
+    <section class="section-color" id="kleur">
       <h2>Kleur</h2>
       <p>
         Kleuren brengen onze merkpersoonlijkheid en waarden over, maar helpen gebruikers ook om door de interface te
@@ -148,162 +150,166 @@
     <section id="formulieren">
       <h2>Formulier</h2>
 
-      <!-- Content form Text Input -->
-      <h3>Tekst input</h3>
-      <p>Een tekstinvoer is een veld waarin gebruikers tekst kunnen invoeren</p>
-      <br>
-      <h4>Anatomie</h4>
-      <p>Tekstinvoer kan gebruikersinvoer op twee verschillende manieren weergeven:</p>
-      <br>
-      <li><b><em>Tekstinvoer met een enkele regel tekst</em></b></li>
-      <div class="container-textInput">
-        <img class="anatomie_img" src="assets/Anatomie.svg" />
-        <ol class="content-textInput">
-          <li>Container</li>
-          <li>Label</li>
-          <li>Placeholder / Input text (optional)</li>
-        </ol>
-      </div>
+  <h3>Tekst input</h3>
+  <p>Een tekstinvoer is een veld waarin gebruikers tekst kunnen invoeren</p>
+  <br>
+  <h4>Anatomie</h4>
+  <p>Tekstinvoer kan gebruikersinvoer op twee verschillende manieren weergeven:</p>
+  <br>
+  <li><b><em>Tekstinvoer met een enkele regel tekst</em></b></li>
 
-      <li><b><em>Tekstgebied met meerdere regels tekst in een tekstinvoer met vaste hoogte</em></b></li>
-      <div class="container-textArea">
-        <img class="anatomie_img" src="assets/Anatomie counter.png" />
-        <ol class="content-textArea">
-          <li>Container</li>
-          <li>Label</li>
-          <li>Placeholder</li>
-          <li>Counter</li>
-        </ol>
-      </div>
+  <div class="container-anatomy-1">
+    <img class="img-anatomy" src="assets/forms/anatomy-1.svg"/>
+    <ol>
+      <li>Container</li>
+      <li>Label</li>
+      <li>Placeholder / Input text (optional)</li>
+    </ol>
+  </div>
 
-      <h4>Gebruik</h4>
-      <p>Vertel hoe dingen toegepast moeten worden.</p>
-      <ul class="container-wrapper">
-        <li><img class="img_wrapper" src="assets/label.svg" />
-          <p><b>Label</b></p>
-          <p>Vermijd het maskeren van het label: houd het label altijd zichtbaar).</p>
-        </li>
-        <li> <img class="img_wrapper" src="assets/width .svg" />
-          <p><b>Breedte & Nabijheid</b></p>
-          <p>Gebruik visuele nabijheid.</p>
-        </li>
-        <li> <img class="img_wrapper" src="assets/focus.svg" />
-          <p><b>Auto-focus</b></p>
-          <p>Automatische scherpstelling instellen.</p>
-        </li>
-        <li> <img class="img_wrapper" src="assets/layout.svg" />
-          <p><b>Layout</b></p>
-          <p>Plaats tekstinvoer op dezelfde regel als de totale breedte past in de schermbreedte en als de invoer
-            gekoppeld is.
-            Gebruik breedte als afbetaling (zoals postcode voorbeeld</p>
-        </li>
-      </ul>
+  <li><b><em>Tekstgebied met meerdere regels tekst in een tekstinvoer met vaste hoogte</em></b></li>
+  <div class="container-anatomy-2">
+    <img class="img-anatomy" src="assets/forms/anatomy-2.png" />
+    <ol>
+      <li>Container</li>
+      <li>Label</li>
+      <li>Placeholder</li>
+      <li>Counter</li>
+    </ol>
+  </div>
 
-      <figure>
-        <figcaption><b>Voorbeeld HTML code</b></figcaption>
-        <div class="form-onvisible-html">
-          <pre>
-            <code>
-              &lt;form method="POST" class="form-visible-code">&lt;/form&gt;
-               &lt;p&gt;&lt;label&gt;Naam:
-                &lt;input name="name" required autocomplete="send name"&gt;&lt;/label&gt;&lt;/p&gt;
-                 &lt;p&gt;&lt;label&gt;Achternaam:
-                &lt;input name="family-name" required autocomplete="send family-name"&gt;&lt;/label&gt;&lt;/p&gt;
-                 &lt;p&gt;&lt;label&gt;Telefoonnummer:
-                &lt;input type=tel name="tel" autocomplete="send tel"&gt;&lt;/p&gt;
-                 &lt;p&gt;&lt;label&gt;E-mail:
-                &lt;input name="email" required autocomplete="send email">&lt;/label&gt;&lt;/p&gt;
-                 &lt;p&gt;&lt;label&gt;Schrijf je E-mail
-                &lt;textarea name="text" rows="4" minlength=18 maxlength=200>Hoi, buurtgenoot!
-                &lt;/textarea&gt;&lt;/label&gt;&lt;/p&gt;
-                  &lt;title&gt;Verstuur email</title>
-                 &lt;p&gt;id="form-box"&gt;&lt;button class="form-button"type="submit">Verstuur E-mail
-                 &lt;/button&gt;&lt;/p&gt;
-             &lt;/form&gt;
-            </code>
-          </pre>
-        </div>
-        <figcaption>
-          <b>Voorbeeld CSS code</b>
-        </figcaption>
-        <div class="form-onvisible-css">
-          <pre>
-          <code>
-  .form-visible-code input,
-  textarea {
-  width: 100%;
-  padding: 10px 10px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid  #333467;
-  border-radius: 5px;
-  resize: none; 
-}
-input, label, textarea {
-  display:block; 
-}
- textarea:focus {
-  border: 2px solid  #333467;
- }
+  <h4>Gebruik</h4>
+  <p>Vertel hoe dingen toegepast moeten worden.</p>
+  <ul class="container-wrapper">
+    <li><img class="img-wrapper" src="assets/forms/label.svg"/>
+      <p><b>Label</b></p>
+      <p>Vermijd het maskeren van het label: houd het label altijd zichtbaar).</p>
+    </li>
+    <li> <img class="img-wrapper" src="assets/forms/width.svg"/>
+      <p><b>Breedte & Nabijheid</b></p>
+      <p>Gebruik visuele nabijheid.</p>
+    </li>
+    <li> <img class="img-wrapper" src="assets/forms/auto-focus.svg"/>
+      <p><b>Auto-focus</b></p>
+      <p>Automatische scherpstelling instellen.</p>
+    </li>
+    <li> <img class="img-wrapper" src="assets/forms/layout.svg"/>
+      <p><b>Layout</b></p>
+      <p>Plaats tekstinvoer op dezelfde regel als de totale breedte past in de schermbreedte en als de invoer
+        gekoppeld is.
+        Gebruik breedte als afbetaling (zoals postcode voorbeeld</p>
+    </li>
+  </ul>
 
-.form-visible-code input:focus {
-    border: 3px solid  #333467;
-  }
-
- .form-button {
-    background-color: #333467;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    border-radius: 5px;;
-    cursor: pointer;
-    justify-content: center;
-  }
-
-  #form-box {
-    text-align: center;
-  }
-          </code>
+    <h4>HTML Code</h4>
+      <pre class="form-example-code-html">
+        <code>
+          &lt;form method="POST" class="form-code">&lt;/form&gt;
+           &lt;p&gt;&lt;label&gt;Naam:
+            &lt;input name="name" required autocomplete="send name"&gt;&lt;/label&gt;&lt;/p&gt;
+             &lt;p&gt;&lt;label&gt;Achternaam:
+            &lt;input name="family-name" required autocomplete="send family-name"&gt;&lt;/label&gt;&lt;/p&gt;
+             &lt;p&gt;&lt;label&gt;Telefoonnummer:
+            &lt;input type=tel name="tel" autocomplete="send tel"&gt;&lt;/p&gt;
+             &lt;p&gt;&lt;label&gt;E-mail:
+            &lt;input type="email" required autocomplete="send email">&lt;/label&gt;&lt;/p&gt;
+             &lt;p&gt;&lt;label&gt;Schrijf je E-mail
+            &lt;textarea name="text" rows="4" minlength=18 maxlength=200>Hoi, buurtgenoot!
+            &lt;/textarea&gt;&lt;/label&gt;&lt;/p&gt;
+              &lt;title&gt;Verstuur email</title>
+             &lt;p class="form-box"&gt;&lt;button class="form-button"type="submit">Verstuur E-mail
+             &lt;/button&gt;&lt;/p&gt;
+         &lt;/form&gt;
+        </code>
       </pre>
-
-        </div>
-      </figure>
-
-      <figure>
-        <h4>Realistische HTML & CSS code</h4>
-        <form method="POST" class="form-visible-code">
-          <p>
-            <label>Naam:
-              <input name="name" required autocomplete="send name">
-            </label>
-          </p>
-          <p>
-            <label>Achternaam:
-              <input name="family-name" required autocomplete="send family-name">
-            </label>
-          </p>
-          <p>
-            <label>Telefoonnummer:
-              <input type=tel name="tel" autocomplete="send tel">
-            </label>
-          </p>
-          <p>
-            <label>E-mail:
-              <input name="email" required autocomplete="send email">
-            </label>
-          </p>
-          <p>
-            <label>Schrijf je E-mail
-              <textarea name="text" rows="4" minlength=18 maxlength=200>Hoi, buurtgenoot!</textarea>
-            </label>
-          </p>
-          <title>Verstuur email</title>
-          <p id="form-box">
-            <button class="form-button" type="submit">Verstuur E-mail</button>
-          </p>
-        </form>
-      </figure>
+  
+      <h4>CSS code</h4>
+      <pre class="form-example-code-css">
+      <code>
+        .form-code {
+          background-color: #D6D6E1;
+          width: 60%;
+          height: 32rem;
+          padding: 1rem;
+          border-radius: 5px;
+        }
+       
+        .form-code input,
+         textarea {
+          width: 100%;
+          padding: 10px 10px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 1px solid  #333467;
+          border-radius: 5px;
+          resize: none;
+        }
+       
+        input, label, textarea {
+          display:block;
+        }
+       
+        .form-code input:focus-visible {
+            outline: 2px solid #333467;
+            border-radius: 3px;
+        }
+       
+        .form-code textarea:focus-visible {
+          outline: 2px solid #333467;
+          border-radius: 3px;
+        }
+       
+         .form-button {
+            background-color: #333467;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 5px;;
+            cursor: pointer;
+          }
+       
+          .form-box {
+            text-align: center;
+            font-family: arial;
+            color: #515183;
+          }
+      </code>
+    </pre>
+    </div>
+    <h4>Visuele HTML & CSS code</h4>
+    <form method="POST" class="form-code">
+      <p>
+        <label>Naam:
+          <input name="name" required autocomplete="send name">
+        </label>
+      </p>
+      <p>
+        <label>Achternaam:
+          <input name="family-name" required autocomplete="send family-name">
+        </label>
+      </p>
+      <p>
+        <label>Telefoonnummer:
+          <input type=tel name="tel" autocomplete="send tel">
+        </label>
+      </p>
+      <p>
+        <label>E-mail:
+          <input name="email" required autocomplete="send email">
+        </label>
+      </p>
+      <p>
+        <label>Schrijf je E-mail
+          <textarea name="text" rows="4" minlength=18 maxlength=200>Hoi, buurtgenoot!</textarea>
+        </label>
+      </p>
+    
+      <p class="form-box">
+        <title>Verstuur email</title>
+        <button class="form-button" type="submit">Verstuur E-mail</button>
+      </p>
+    </form>
     </section>
 
     <section id="responsive">
@@ -325,8 +331,7 @@ input, label, textarea {
       <p>Maak de ruimte die de afbeeldingen innemen kleiner, verwijder zonodig een aantal afbeeldingen</p>
 
       <h4>Niet doen</h4>
-      <p>Meerdere afbeeldingen naast elkaar zetten in de breedte, dit kan ervoor zorgen dat de pagina niet genoeg ruimte
-        heeft
+      <p>Meerdere afbeeldingen naast elkaar zetten in de breedte, dit kan ervoor zorgen dat de pagina niet genoeg ruimte heeft
         (afbeeldingen maken een te groot deel uit van de
         pagina).</p>
     </section>
@@ -334,77 +339,79 @@ input, label, textarea {
     <section id="beeldgebruik">
       <h2>Beeldgebruik</h2>
 
-      <h3>Header</h3>
-      <br>
       <h4>Wel doen</h4>
-      <p>De meeste afbeeldingen zullen van stekjes/planten zijn. Verder zal er veel gebruik gemaakt word van groene
-        kleuren en de kleuren die passen bij de huisstijl.
-        Verder word er gebruik gemaakt van een one - value border radius:
-        <pre>
+      <p class="p-beeldgebruik">De meeste afbeeldingen zullen van stekjes en planten zijn. Verder zal er veel gebruik gemaakt word van groene
+        kleuren die passen bij de huisstijl.
+        Om afbeeldingen afgeronde hoeken te geven word er gebruik gemaakt van een one - value border radius:
+      <pre class="code-voorbeeld-beeldgebruik">
           <code>
             <p>
-              border-radius: 15px;
+              .border-radius-image {
+               border-radius: 5px;
+               width: 20em;
+               padding-bottom: 30px;
+              }
             </p>
           </code>
         </pre>
-        <img class="border-radius-image" src="assets/borderradius.png" alt="image-borderradius">
+      <img class="border-radius-image" src="assets/stekjes-workshop.jpeg" alt="image-borderradius">
 
-        <h4>Niet doen</h4>
-        <p>We maken geen gebruikt van two, tree of four values. Dit is dat je bepaalde hoeken wel afrond, en sommige
-          vierkant laat. Het volgende voorbeeld
-          is een two values border-radius:</p>
-        <br>
-        <img class="two-values-image" src="assets/twovalue.png" alt="image-twovauleusborderradius">
+      <h4 class="h4-beeldgebruik">Niet doen</h4>
+      <p class="p2-beeldgebruik">We maken geen gebruikt van two, tree of four values. Dit is dat je bepaalde hoeken wel afrond, en sommige
+        vierkant laat. Het volgende voorbeeld
+        is een two values border-radius:</p>
+      <br>
+      <img class="two-values-image" src="assets/stekjes-workshop.jpeg" alt="image-twovauleusborderradius">
     </section>
 
     <section id="typografie">
       <h2>Typografie</h2>
 
-      <article class="typografie_box">
+      <article class="typografie-box">
         <h3>Basis Text</h3>
-        <div class="basis_text">
+        <div class="basis-text">
 
-          <div class="text_family">
+          <div class="text-family">
             <h4>Family</h4>
             <p>Arial</p>
           </div>
 
-          <div class="text_size">
+          <div class="text-size">
             <h4>Size</h4>
             <p>1rem</p>
             <p>16px</p>
           </div>
 
-          <div class="text_lineheight">
+          <div class="text-lineheight">
             <h4>Line Height</h4>
             <p>140%</p>
           </div>
 
-          <div class="text_color">
+          <div class="text-color">
             <h4>Color</h4>
             <p>#333467</p>
           </div>
 
-          <div class="text_text">
+          <div class="text-text">
             <p>Grumpy wizards make a toxic brew for the jovial queen.</p>
           </div>
         </div>
 
         <h3>Highlighted Text</h3>
-        <div class="highlighted_text">
+        <div class="highlighted-text">
 
-          <div class="text_family">
+          <div class="text-family">
             <h4>Family</h4>
             <p>Arial (Bold)</p>
           </div>
 
-          <div class="text_size">
+          <div class="text-size">
             <h4>Size</h4>
             <p>1.2rem</p>
             <p>19px</p>
           </div>
 
-          <div class="text_lineheight">
+          <div class="text-lineheight">
             <h4>Line Height</h4>
             <p>150%</p>
           </div>
@@ -414,27 +421,27 @@ input, label, textarea {
             <p>#333467</p>
           </div>
 
-          <div class="highlighted_text_text">
+          <div class="highlighted-text-text">
             <p>Grumpy wizards make a toxic brew for the jovial queen.</p>
           </div>
         </div>
 
         <h3>Text-Alignment</h3>
-        <div class="text_alignment">
+        <div class="text-alignment">
           <img src="assets/text_alignment.png">
           <p>Normale text dient <b>links</b> uitgelijnd te worden, met een maximale regellengte van <b>30rem</b></p>
         </div>
       </article>
 
-      <article class="typografie_box">
+      <article class="typografie-box">
         <div class="headings">
           <h4>Headings</h4>
 
-          <div class="heading_alignment">
+          <div class="heading-alignment">
             <img src="assets/heading_alignment.png">
             <p>Headings dienen <b>gecentreerd</b> boven text of elementen geplaatst te worden.</p>
           </div>
-
+       <div class="typografie-table">
           <table>
             <tr>
               <th>Heading</th>
@@ -454,11 +461,11 @@ input, label, textarea {
               <td>18pt</td>
               <td>16pt</td>
             </tr>
-          </table>
+          </table></div>
           <p>Headings dienen volgens semantische volgorde de aangegeven groottes te hebben.</p>
         </div>
 
-        <ul class="duurzaamheidText">
+        <ul class="duurzaamheid-text">
           <li>
             <p>Duurzaamheid</p>
           </li>
@@ -489,15 +496,19 @@ input, label, textarea {
         kunnen een opdracht, een bestand, een contactmethode, of een verzorg symboliseren voor de plantjes. Ze worden
         ook gebruikt om algemene acties weer te geven, zoals navigatie en sociaal media symboliseren.
       </p>
-      <p>Strook van de icons is: <strong>solid 3px</strong></p>
+      <p>Strook van de icons is: <strong>solid 1.5px</strong></p>
       <blockquote class="icons">
         <!-- content wordt toegevoegd met js -->
-        <div id="simpelIcon"></div>
+        <div id="simpelIcon" class="simpelIcon"></div>
       </blockquote>
+      <p>Download de icons vanuit deze website: <a href="https://thenounproject.com/">The Noun project</a></p>
     </section>
 
     <section id="buttons">
       <h2>Buttons</h2>
+      <h3>Header</h3>
+      <h4>Wel doen</h4>
+      <p>Vertel hoe dingen toegepast moeten worden.</p>
 
       <h3>Gebruik</h3>
 
