@@ -119,6 +119,28 @@ h2 {
   width: 650px;
 }
 /* header end */
+
+
+/* LOGO */
+
+
+.container-logo-img {
+  display: flex;
+
+}
+
+.container-logo-img img {
+  max-width: 15rem;
+  height: auto; 
+}
+
+
+
+
+/* LOGO END */
+
+
+
  
 /* iCONS END */
 .icons {
