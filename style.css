@@ -1,17 +1,62 @@
 @font-face {
   font-family: 'Halton';
-  src: url(assets/Halton/Halton\ regular.otf),
-    url(assets/Halton/Halton\ regular-italic.otf),
-    url(assets/Halton/Halton\ bold.otf),
-    url(assets/Halton/Halton\ bold-italic.otf),
-    url(assets/Halton/Halton\ light.otf),
-    url(assets/Halton/Halton\ light-italic.otf),
-    url(assets/Halton/Halton\ thin.otf),
-    url(assets/Halton/Halton\ thin-italic.otf);
+  src: url(assets/Halton/Halton\ regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Halton';
+  src: url(assets/Halton/Halton\ regular-italic.otf);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Halton';
+  src: url(assets/Halton/Halton\ bold.otf);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Halton';
+  src: url(assets/Halton/Halton\ bold-italic.otf);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Halton';
+  src: url(assets/Halton/Halton\ light.otf);
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Halton';
+  src: url(assets/Halton/Halton\ light-italic.otf);
+  font-weight: lighter;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Halton';
+  src: url(assets/Halton/Halton\ thin.otf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Halton';
+  src: url(assets/Halton/Halton\ thin-italic.otf);
+  font-weight: 100;
+  font-style: italic;
+}
+
+*,
+*::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: 'Halton', serif;
+  font-weight: normal;
   font-size: 1.2em;
   display: block;
   background-color: #272932;
@@ -25,25 +70,49 @@ header {
   color: #ecf8f8;
 }
 
+main {
+  margin: 0 10em 10em 10em;
+}
+
+h1 {
+  margin: 0.5em 0 0 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 h2 {
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: 500;
-  padding-top: 0;
+  align-items: center;
+  margin: 0 0 1em 0;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #947EB0;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 0.5px;
+  background: #ecf8f8;
+}
+
+p {
+  margin: 1em 0 0.5em 0;
+  font-weight: 100;
 }
 
 .a {
-  border: 1px solid;
-  border-radius: .5em;
-  border-color: #272932;
+  /* border: 0.5px solid #ecf8f8;
+  border-radius: .25em; */
   padding: 1em;
   margin: 10px;
-  background-color: #454545;
+  /* background-color: #454545; */
 }
 
 .box {
   display: inline-block;
-  border: 1px solid;
+  /* border: 1px solid; */
   border-color: #272932;
   margin: .5em;
   border-radius: .25em;
@@ -51,6 +120,7 @@ h2 {
   height: 4.5em;
 }
 
+/* KLEUREN */
 .background {
   background-color: #272932;
 }
@@ -71,4 +141,38 @@ h2 {
   background-color: #FB8B24;
 }
 
-/hoi
+/* BUTTONS */
+.button {
+  margin: 0 0.5em;
+  padding: 0.75em 2em;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  border-radius: 1000px;
+  border-style: none;
+  color: #272932;
+  background-color: #947EB0;
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 50%;
+}
+
+.destructive {
+  background-color: #FB8B24;
+  cursor: disabled;
+}
+
+.recommended {
+  background-color: #519879;
+}
+
+.minor {
+  background-color: transparent;
+  color: #519879;
+}
+
+.minor:hover {
+  text-decoration: underline;
+}
