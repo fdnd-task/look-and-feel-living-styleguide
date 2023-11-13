@@ -1,0 +1,29 @@
+.typography article {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+
+.typography article>ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.h1 {
+    font-size: 2em;
+    font-weight: 600;
+    font-family: 'Halton-bold';
+    margin: 0;
+}
+
+.typography article h2 {
+    margin-bottom: 1.5em;
+}
+
+.typography article h3 {
+    grid-column: span 2;
+    margin-bottom: .5em;
+}

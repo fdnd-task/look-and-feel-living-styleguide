@@ -1,13 +1,18 @@
 @font-face {
   font-family: 'Halton';
-  src: url(assets/Halton/Halton\ regular.otf),
-    url(assets/Halton/Halton\ regular-italic.otf),
-    url(assets/Halton/Halton\ bold.otf),
-    url(assets/Halton/Halton\ bold-italic.otf),
-    url(assets/Halton/Halton\ light.otf),
-    url(assets/Halton/Halton\ light-italic.otf),
-    url(assets/Halton/Halton\ thin.otf),
-    url(assets/Halton/Halton\ thin-italic.otf);
+  src: url(assets/Halton/Halton\ regular.otf) format('opentype');
+    /* url(assets/Halton/Halton\ regular-italic.otf) format('opentype'),
+    url(assets/Halton/Halton\ bold.otf) format('opentype'),
+    url(assets/Halton/Halton\ bold-italic.otf) format('opentype'),
+    url(assets/Halton/Halton\ light.otf) format('opentype'),
+    url(assets/Halton/Halton\ light-italic.otf)   format('opentype'),
+    url(assets/Halton/Halton\ thin.otf) format('opentype'),
+    url(assets/Halton/Halton\ thin-italic.otf) format('opentype'); */
+}
+@font-face {
+  font-family: 'Halton-bold';
+  src: url(assets/Halton/Halton\ bold.otf) format('opentype');
+  font-display: swap;
 }
 
 body {
