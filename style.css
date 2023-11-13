@@ -29,7 +29,7 @@ h2{
   background-color: #454545 ;
 }
 
-div{
+.box{
   display: inline-block;
   border: 1px solid;
   border-color: #272932;
