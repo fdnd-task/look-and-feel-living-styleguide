@@ -1,8 +1,6 @@
 @font-face {
   font-family: 'Halton';
   src: url(assets/Halton/Halton\ regular.otf);
-  font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: 'Halton';
@@ -51,6 +49,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  src: url(assets/Halton/Halton\ regular.otf) format('opentype');
+    /* url(assets/Halton/Halton\ regular-italic.otf) format('opentype'),
+    url(assets/Halton/Halton\ bold.otf) format('opentype'),
+    url(assets/Halton/Halton\ bold-italic.otf) format('opentype'),
+    url(assets/Halton/Halton\ light.otf) format('opentype'),
+    url(assets/Halton/Halton\ light-italic.otf)   format('opentype'),
+    url(assets/Halton/Halton\ thin.otf) format('opentype'),
+    url(assets/Halton/Halton\ thin-italic.otf) format('opentype'); */
+}
+@font-face {
+  font-family: 'Halton-bold';
+  src: url(assets/Halton/Halton\ bold.otf) format('opentype');
+  font-display: swap;
 }
 
 body {
