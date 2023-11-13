@@ -77,7 +77,7 @@ Voorbeelden van een levende stijlgids zijn de [Decathlon Design System](https://
 
 Deze opdracht is done als:
 
-- [ ] er is een Interface Inventory opgenomen in de wiki
+- [x] er is een Interface Inventory opgenomen in de wiki
 - [ ] er is een living styleguide gemaakt met HTML en CSS en bevat voorbeelden, uitleg en code
 - [ ] de living styleguide is te bekijken via een live url
 
