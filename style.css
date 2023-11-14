@@ -109,6 +109,10 @@ h2::after {
   background: #ecf8f8;
 }
 
+h4{
+  text-transform: uppercase;
+}
+
 p {
   margin: 1em 0 0.5em 0;
   font-weight: 100;
@@ -192,6 +196,7 @@ p {
 }
 
 /*Grid layout*/
+
 .a {
   display: grid;
   grid-template-areas: 
@@ -205,7 +210,7 @@ p {
 .title-topic{
   grid-area: a;
 }
-.styleguide {
+.topic {
   border-right: 1px solid;
   padding: 1.2em;
   grid-area:b;
