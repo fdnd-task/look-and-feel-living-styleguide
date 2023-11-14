@@ -4,56 +4,111 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[Projectnaam] living styleguide</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>living styleguide</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+
   </head>
-  <body>
+
+  <body >
     <header>
-      <h1>[Projectnaam] styleguide v0.1</h1>
+        <nav>
+            <a href="index.html"><img src="https://dehallen-amsterdam.nl/wp-content/uploads/2018/07/de_hallen_logo@2x.png" alt="De Hallen logo" width="250" ></a>
+            <a href="/">accesibility</a>
+        </nav>
     </header>
+    
+    <div class="container banner">
+        <img src="assets/48027696262_62b3dd05f7_b.jpg" alt="banner">
+        <img src="assets\house-white.svg" alt="dak logo" width="150">
+    </div>
 
-    <nav>
-      <ul>
-        <li><a href="/" class="active">Globals</a></li>
-        <li><a href="/">...</a></li>
-      </ul>
-    </nav>
+    <main class="components-grid">
 
-    <main>
-      <h2>Globals</h2>
+        <section class="intro">
+            <h1>styleguide</h1>
+            <p>Here you can explore the guidlines and compononents for De Hallen's website </p>
+        </section>
+        
+        <aside class="list">
+            <ul>
+                <li><a href="#Typography">Typography</a></li>
+                <li><a href="#images-media">images and media</a></li>
+                <li><a href="#buttons">buttons</a></li>
+                <li><a href="#navigation">navigation</a></li>
+                <li><a href="#other">others</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </aside>
 
-      <section>
-        <h3>Header</h3>
-        <img src="screenshot_van_je_header.png" alt="screenshot van je header" />
+        <ul class="container-components">
+            <li class="block" id="Typography">
+                <h2>Typography</h2>
+                <div class="components">
+                    <!-- here we code the components, add images or show code -->   
+                </div>
+                <div class="compo-text">
+                    <article></article>
+                </div>
+            </li>
 
-        <h4>Wel doen</h4>
-        <p>Vertel hoe dingen toegepast moeten worden.</p>
+            <li class="block" id="images-media">
+                <h2>images and media</h2>
+                <div class="components">
+                    <!-- here we code the components, add images or show code -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate expedita aut iure voluptatum quidem rerum excepturi, molestiae quia laboriosam nobis modi molestias quibusdam facilis debitis praesentium tempora? Suscipit eaque sed architecto dicta, recusandae nesciunt, autem distinctio dolorum ipsa voluptatibus animi iste? Quo iusto nostrum aspernatur illo perspiciatis quas similique iste.
+                </div>
+                <div class="compo-text">
+                    <article><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dignissimos?</em></article>
+                </div>
+            </li>
 
-        <h4>Niet doen</h4>
-        <p>Vertel hoe dingen vooral niet toegepast moeten worden.</p>
+            <li class="block" id="buttons">
+                <h2>buttons</h2>
+                <div class="components">
+                    <!-- here we code the components, add images or show code -->
+                </div>
+                <div class="compo-text">
+                    <article> hi hi we tying things out </article>
+                </div>
+            </li>
 
-        <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
-        <pre><code>&lt;header&gt;
-  &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
-&lt;/header&gt;
+            <li class="block" id="navigation">
+                <h2>navigation</h2>
+                <div class="components">
+                    <!-- here we code the components, add images or show code -->
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                </div>
 
-header {
-  background-color: white;
-  margin-bottom: 1rem;
-  color: silver;
-}
+                <div class="compo-text">
+                    <article></article>
+                </div>
+            </li>
 
-header > h1 {
-  font-size: 1rem;
-  text-align: right;
-}
-  </code></pre>
-      </section>
+            <li class="block" id="other">
+                <h2>other</h2>
+                <div class="components">
+                    <!-- here we code the components, add images or show code -->
+                    <ul class="other">
+                        <li>1</li>
+                        <li>5</li>
+                        <li>0</li>
+                    </ul>
 
-      <section>
-        <h3>Footer</h3>
-        ...
-      </section>
+                </div>
+                <div class="compo-text">
+                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum cupiditate quod possimus rerum quis eos distinctio aspernatur tenetur neque.</article>
+                </div>
+            </li>
+            <!-- add more if needed -->
+            
+        </ul>
+    
     </main>
   </body>
-</html>
