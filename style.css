@@ -74,6 +74,158 @@
   font-display: swap;
 }
 
+/* /small screen/ */
+@media (min-width:320px) {
+  body {
+    margin: 0;
+    font-family: 'Halton', serif;
+    font-weight: normal;
+    font-size: 1em;
+    display: block;
+    background-color: #272932;
+    color: #ecf8f8;
+  }
+
+  header {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #ecf8f8;
+  }
+
+  main {
+    margin: 0 1em 3em 1em;
+  }
+
+  h1 {
+    margin: 0.5em 0 0 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  h2 {
+    align-items: center;
+    margin: 0 0 1em 0;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #947EB0;
+  }
+
+  h2::after {
+    content: "";
+    display: block;
+    height: 0.5px;
+    background: #ecf8f8;
+  }
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 1em 0 0.5em 0;
+    font-weight: 100;
+  }
+
+  .a {
+    /* border: 0.5px solid #ecf8f8;
+  border-radius: .25em;*/
+    padding: 1em;
+    margin: 10px;
+    /* background-color: #454545; */
+  }
+
+
+  /* KLEUREN */
+  .box {
+    display: inline-block;
+    /* border: 1px solid; */
+    border-color: #272932;
+    margin: .5em;
+    border-radius: .25em;
+    width: 3.3em;
+    height: 3.3em;
+  }
+
+  .background {
+    background-color: #272932;
+  }
+
+  .text {
+    background-color: #ecf8f8;
+  }
+
+  .primary {
+    background-color: #947EB0;
+  }
+
+  .secondary {
+    background-color: #519879;
+  }
+
+  .accent {
+    background-color: #FB8B24;
+  }
+
+
+  /* BUTTONS */
+  .button {
+    margin: 0 0.4em;
+    padding: 0.4em 1.5em;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    border-radius: 1000px;
+    border-style: none;
+    color: #272932;
+    background-color: #947EB0;
+    cursor: pointer;
+  }
+
+  .button:disabled {
+    cursor: not-allowed;
+    opacity: 50%;
+  }
+
+  .destructive {
+    background-color: #FB8B24;
+    cursor: disabled;
+  }
+
+  .recommended {
+    background-color: #519879;
+  }
+
+  .minor {
+    background-color: transparent;
+    color: #519879;
+  }
+
+  .minor:hover {
+    text-decoration: underline;
+  }
+
+  /Grid layout/ .a {
+    display: block;
+    padding: 1em;
+  }
+
+  .topic {
+    border-bottom: 1px solid;
+    padding: .8em;
+  }
+
+  .wel {
+    border-bottom: 1px solid;
+    padding: .8em;
+  }
+
+  .niet {
+    padding: .8em;
+  }
+}
+
 /*medium screen*/
 
 @media (min-width:415px) {
