@@ -122,6 +122,8 @@ p {
   /* background-color: #454545; */
 }
 
+
+/* KLEUREN */
 .box {
   display: inline-block;
   /* border: 1px solid; */
@@ -132,7 +134,6 @@ p {
   height: 4.5em;
 }
 
-/* KLEUREN */
 .background {
   background-color: #272932;
 }
@@ -152,6 +153,7 @@ p {
 .accent {
   background-color: #FB8B24;
 }
+
 
 /* BUTTONS */
 .button {
