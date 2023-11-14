@@ -1,7 +1,11 @@
-.typography article {
+.typography article:first-child {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 
+.typography article:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .typography article > ul {
@@ -17,6 +21,14 @@
     font-weight: 600;
     font-family: 'Halton-bold';
     margin: 0;
+}
+
+.h2 {
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Halton';
+    margin: 0;
+
 }
 
 .typography article h2 {
