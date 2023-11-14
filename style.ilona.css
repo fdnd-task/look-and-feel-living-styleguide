@@ -1,41 +1,63 @@
-.typography article:first-child {
+.topic:nth-child(3) {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "h3 h3"
+        "li1 h1";
 }
 
-.typography article:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.typography article > ul {
-    display: flex;
+.topic ul li:nth-child(1) {
     list-style: none;
     gap: 1em;
     padding: 0;
     margin: 0;
+    grid-area: li1;
 }
 
 .h1 {
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 600;
     font-family: 'Halton-bold';
+    grid-area: h1;
+}
+
+.topic:nth-child(4) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "h4 h4"
+        "li2 h2";
+}
+
+.topic ul li:nth-child(2) {
+    list-style: none;
+    gap: 1em;
+    padding: 0;
     margin: 0;
+    grid-area: li2;
 }
 
 .h2 {
     font-size: 1em;
+    font-weight: 100;
+    font-family: 'Halton';
+    grid-area: h2;
+}
+
+.topic:nth-child(3) h3 {
+    font-size: 1em;
     font-weight: 600;
     font-family: 'Halton';
-    margin: 0;
-
+    grid-area: h3;
 }
 
-.typography article h2 {
-    margin-bottom: 1.5em;
-}
-
-.typography article h3 {
-    grid-column: span 2;
-    margin-bottom: .5em;
+.topic:nth-child(4) h4 {
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Halton';
+    grid-area: h4;
 }
