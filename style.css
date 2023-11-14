@@ -76,7 +76,7 @@
 
 /*medium screen*/
 
-@media (min-width:641px) {
+@media (min-width:415px) {
 
   body {
     margin: 0;
