@@ -1,51 +1,51 @@
 @font-face {
-  font-family: 'Halton';
+  font-family: "Halton";
   src: url(assets/Halton/Halton\ regular.otf);
 }
 
 @font-face {
-  font-family: 'Halton';
+  font-family: "Halton";
   src: url(assets/Halton/Halton\ regular-italic.otf);
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Halton';
+  font-family: "Halton";
   src: url(assets/Halton/Halton\ bold.otf);
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Halton';
+  font-family: "Halton";
   src: url(assets/Halton/Halton\ bold-italic.otf);
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Halton';
+  font-family: "Halton";
   src: url(assets/Halton/Halton\ light.otf);
   font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Halton';
+  font-family: "Halton";
   src: url(assets/Halton/Halton\ light-italic.otf);
   font-weight: lighter;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Halton';
+  font-family: "Halton";
   src: url(assets/Halton/Halton\ thin.otf);
   font-weight: 100;
 }
 
 @font-face {
-  font-family: 'Halton';
+  font-family: "Halton";
   src: url(assets/Halton/Halton\ thin-italic.otf);
   font-weight: 100;
   font-style: italic;
@@ -58,7 +58,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  src: url(assets/Halton/Halton\ regular.otf) format('opentype');
+  src: url(assets/Halton/Halton\ regular.otf) format("opentype");
   /* url(assets/Halton/Halton\ regular-italic.otf) format('opentype'),
     url(assets/Halton/Halton\ bold.otf) format('opentype'),
     url(assets/Halton/Halton\ bold-italic.otf) format('opentype'),
@@ -69,18 +69,17 @@
 }
 
 @font-face {
-  font-family: 'Halton-bold';
-  src: url(assets/Halton/Halton\ bold.otf) format('opentype');
+  font-family: "Halton-bold";
+  src: url(assets/Halton/Halton\ bold.otf) format("opentype");
   font-display: swap;
 }
 
 /*medium screen*/
 
-@media (min-width:415px) {
-
+@media (min-width: 415px) {
   body {
     margin: 0;
-    font-family: 'Halton', serif;
+    font-family: "Halton", serif;
     font-weight: normal;
     font-size: 1.2em;
     display: block;
@@ -112,7 +111,7 @@
     text-transform: uppercase;
     font-size: 1.25em;
     font-weight: bold;
-    color: #947EB0;
+    color: #947eb0;
   }
 
   h2::after {
@@ -139,38 +138,51 @@
     /* background-color: #454545; */
   }
 
-
   /* KLEUREN */
   .box {
     display: inline-block;
     /* border: 1px solid; */
     border-color: #272932;
-    margin: .5em;
-    border-radius: .25em;
+    margin: 0.5em;
+    border-radius: 0.25em;
     width: 4.5em;
     height: 4.5em;
+    position: relative;
+    top: -25%;
   }
 
   .background {
     background-color: #272932;
+    border: 2px solid;
+    border-color: white;
+    position: relative;
+    top: -5%;
   }
 
   .text {
     background-color: #ecf8f8;
+    position: relative;
+    top: -15%;
   }
 
   .primary {
-    background-color: #947EB0;
+    background-color: #947eb0;
+    position: relative;
+    top: -15%;
   }
 
   .secondary {
     background-color: #519879;
+    position: relative;
+    top: -15%;
   }
 
   .accent {
-    background-color: #FB8B24;
+    background-color: #fb8b24;
+    position: relative;
+    right: 1%;
+    top: 25%;
   }
-
 
   /* BUTTONS */
   .button {
@@ -181,7 +193,7 @@
     border-radius: 1000px;
     border-style: none;
     color: #272932;
-    background-color: #947EB0;
+    background-color: #947eb0;
     cursor: pointer;
   }
 
@@ -191,7 +203,7 @@
   }
 
   .destructive {
-    background-color: #FB8B24;
+    background-color: #fb8b24;
     cursor: disabled;
   }
 
@@ -240,15 +252,13 @@
     padding: 1.2em;
     grid-area: d;
   }
-
 }
 
-@media (min-width:1024) {
-
+@media (min-width: 1024) {
   /*large screens*/
   body {
     margin: 0;
-    font-family: 'Halton', serif;
+    font-family: "Halton", serif;
     font-weight: normal;
     font-size: 1.2em;
     display: block;
@@ -280,7 +290,7 @@
     text-transform: uppercase;
     font-size: 1.25em;
     font-weight: bold;
-    color: #947EB0;
+    color: #947eb0;
   }
 
   h2::after {
@@ -307,14 +317,13 @@
     /* background-color: #454545; */
   }
 
-
   /* KLEUREN */
   .box {
     display: inline-block;
     /* border: 1px solid; */
     border-color: #272932;
-    margin: .5em;
-    border-radius: .25em;
+    margin: 0.5em;
+    border-radius: 0.25em;
     width: 4.5em;
     height: 4.5em;
   }
@@ -328,7 +337,7 @@
   }
 
   .primary {
-    background-color: #947EB0;
+    background-color: #947eb0;
   }
 
   .secondary {
@@ -336,9 +345,8 @@
   }
 
   .accent {
-    background-color: #FB8B24;
+    background-color: #fb8b24;
   }
-
 
   /* BUTTONS */
   .button {
@@ -349,7 +357,7 @@
     border-radius: 1000px;
     border-style: none;
     color: #272932;
-    background-color: #947EB0;
+    background-color: #947eb0;
     cursor: pointer;
   }
 
@@ -359,7 +367,7 @@
   }
 
   .destructive {
-    background-color: #FB8B24;
+    background-color: #fb8b24;
     cursor: disabled;
   }
 
@@ -408,5 +416,71 @@
     padding: 1.2em;
     grid-area: d;
   }
+}
+/* tekst posities kleuren */
+.black {
+  position: absolute;
+  bottom: -80%;
+  left: -12%;
+}
 
+.zwart {
+  position: absolute;
+  bottom: -120%;
+  left: -12%;
+}
+
+.purple {
+  position: relative;
+  bottom: -114%;
+  left: 12%;
+}
+
+.paars {
+  position: relative;
+  bottom: -123%;
+}
+
+.green {
+  position: relative;
+  bottom: -115%;
+}
+
+.groen {
+  position: relative;
+  bottom: -122%;
+}
+
+.white {
+  position: relative;
+  top: 115%;
+}
+
+.wit {
+  position: relative;
+  top: 122%;
+}
+
+.orange {
+  position: relative;
+  right: -120%;
+  bottom: -20%;
+}
+/* lijnen tussen kleur en kleurcode */
+.border {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  position: relative;
+  top: 65%;
+  border-style: solid;
+  right: 3%;
+  border-radius: 50%;
+}
+
+.line {
+  border-bottom: 3px white solid;
+  position: relative;
+  bottom: -103%;
+  border-radius: 50%;
+  width: 25%;
+  left: 20%;
 }
