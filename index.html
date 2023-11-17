@@ -4,56 +4,135 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[Projectnaam] living styleguide</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>living styleguide</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/content.css" />
+
   </head>
-  <body>
+
+  <body >
     <header>
-      <h1>[Projectnaam] styleguide v0.1</h1>
+        <nav>
+            <a href="index.html"><img src="https://dehallen-amsterdam.nl/wp-content/uploads/2018/07/de_hallen_logo@2x.png" alt="De Hallen logo" width="250" ></a>
+            <a href="/">accesibility</a>
+        </nav>
     </header>
+    
+    <div class="container banner">
+        <img src="assets/48027696262_62b3dd05f7_b.jpg" alt="banner">
+        <img src="assets\house-white.svg" alt="dak logo" width="150">
+    </div>
 
-    <nav>
-      <ul>
-        <li><a href="/" class="active">Globals</a></li>
-        <li><a href="/">...</a></li>
-      </ul>
-    </nav>
+    <main class="components-grid">
 
-    <main>
-      <h2>Globals</h2>
+        <section class="intro">
+            <h1>styleguide</h1>
+            <p>Here you can explore the guidlines and compononents for De Hallen's website </p>
+        </section>
+        
+        <aside class="list">
+            <ul>
+                <li><a href="#Typography">Typography</a></li>
+                <li><a href="#images-media">images and media</a></li>
+                <li><a href="#buttons">buttons</a></li>
+                <li><a href="#navigation">navigation</a></li>
+                <li><a href="#other">others</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </aside>
 
-      <section>
-        <h3>Header</h3>
-        <img src="screenshot_van_je_header.png" alt="screenshot van je header" />
+        <ul class="container-components">
+            <li class="block" id="Typography">
+                <h2>Typography</h2>
+                <div class="components">
+                    <!-- here we code the components, add images or show code -->   
+                </div>
+                <div class="compo-text">
+                    <article>
+                        <h3>fonts</h3>
+                        <p>itc avant garde gothic</p>
+                        <p>itc avant garde gothic s</p>
+                        <br>
+                        <h3>headings</h3>
+                        <ul>
+                            <!-- check if necessary -->
+                            <li><strong>size</strong>:</li>
+                            <li><strong>color</strong>:</li>
+                            <li><strong>line-height</strong>:</li>
+                        </ul>
+                        <br>
+                        <h3>text elements</h3>
+                        <ul>
+                            <!-- check if necessary -->
+                            <li><strong>size</strong>:</li>
+                            <li><strong>color</strong>:</li>
+                            <li><strong>line-height</strong>:</li>
+                        </ul>
 
-        <h4>Wel doen</h4>
-        <p>Vertel hoe dingen toegepast moeten worden.</p>
+                    </article>
+                </div>
+            </li>
 
-        <h4>Niet doen</h4>
-        <p>Vertel hoe dingen vooral niet toegepast moeten worden.</p>
+            <li class="block" id="images-media">
+                <h2>images and media</h2>
+                <div class="components">
+                    <!-- here we code the components, add images or show code -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate expedita aut iure voluptatum quidem rerum excepturi, molestiae quia laboriosam nobis modi molestias quibusdam facilis debitis praesentium tempora? Suscipit eaque sed architecto dicta, recusandae nesciunt, autem distinctio dolorum ipsa voluptatibus animi iste? Quo iusto nostrum aspernatur illo perspiciatis quas similique iste.
+                </div>
+                <div class="compo-text">
+                    <article><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dignissimos?</em></article>
+                </div>
+            </li>
 
-        <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
-        <pre><code>&lt;header&gt;
-  &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
-&lt;/header&gt;
+            <li class="block" id="buttons">
+                <h2>buttons</h2>
+                <div class="components">
+                    <!-- here we code the components, add images or show code -->
+                </div>
+                <div class="compo-text">
+                    <article> hi hi we tying things out </article>
+                </div>
+            </li>
 
-header {
-  background-color: white;
-  margin-bottom: 1rem;
-  color: silver;
-}
+            <li class="block" id="navigation">
+                <h2>navigation</h2>
+                <div class="components">
+                    <!-- here we code the components, add images or show code -->
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                </div>
 
-header > h1 {
-  font-size: 1rem;
-  text-align: right;
-}
-  </code></pre>
-      </section>
+                <div class="compo-text">
+                    <article></article>
+                </div>
+            </li>
 
-      <section>
-        <h3>Footer</h3>
-        ...
-      </section>
+            <li class="block" id="other">
+                <h2>other</h2>
+                <div class="components">
+                    <!-- here we code the components, add images or show code -->
+                    <ul class="other">
+                        <li>1</li>
+                        <li>5</li>
+                        <li>0</li>
+                    </ul>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nihil doloribus, sint autem sunt distinctio suscipit veniam assumenda esse corrupti adipisci culpa nobis aut nam, optio ipsum veritatis iusto laboriosam, rerum quia voluptate fugit libero quos. Consectetur blanditiis, atque reiciendis consequatur asperiores veritatis vitae minima labore, et ipsum earum placeat vel fuga dolore! Omnis magnam quo, debitis doloribus saepe neque aut sit? Impedit repellendus corrupti dolore alias vero sint minima est nobis, delectus similique commodi, facere aut. Molestiae facilis delectus tenetur minus esse excepturi consequatur architecto id deserunt provident! Quam voluptatem dolores ut ullam corrupti blanditiis odit asperiores consequatur incidunt.
+                   Illo, eaque sed quisquam eos mollitia aliquam dicta ad consequuntur quis, quo ducimus quas veritatis nam dolor sunt quam tenetur libero. Et provident sint cumque facilis omnis molestias obcaecati laboriosam animi est soluta quas ipsum, sit autem nihil minima, illum aut asperiores aspernatur adipisci. Quo, exercitationem officiis perspiciatis eum alias necessitatibus consectetur cupiditate accusamus veniam similique magnam vitae velit maiores. Quod aut accusamus, ex dolor hic, necessitatibus deserunt eos itaque dignissimos, quos voluptatem doloribus nisi? Quasi dolorum error, consequatur iure possimus voluptate beatae atque excepturi nostrum ut consequuntur velit fugit. Quod, nostrum id. Aliquam, aut sint eveniet illum eligendi quis.</p>
+                    <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, incidunt?</em>
+                </div>
+                <div class="compo-text">
+                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum cupiditate quod possimus rerum quis eos distinctio aspernatur tenetur neque.</article>
+                </div>
+            </li>
+            <!-- add more if needed -->
+            
+        </ul>
+    
     </main>
   </body>
-</html>
